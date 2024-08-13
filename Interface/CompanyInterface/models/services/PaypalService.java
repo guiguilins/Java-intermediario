@@ -4,13 +4,13 @@ public class PaypalService implements OnlinePaymentService {
 
     @Override
     public double paymentFee(double amount) {
-       double result = 0;
-       return result;
+        return amount * 0.02;
     }
 
     @Override
     public double interest(double amount, Integer months) {
-            return 0;
+
+        return amount * 0.01 * months;
     }
 
 }
